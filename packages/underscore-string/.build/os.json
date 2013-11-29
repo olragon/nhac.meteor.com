@@ -1,0 +1,27 @@
+{
+  "format": "unipackage-slice-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "underscore"
+    }
+  ],
+  "implies": [
+    {
+      "package": "underscore"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/underscore-string.js",
+      "length": 64350,
+      "offset": 0,
+      "servePath": "/packages/underscore-string.js",
+      "sourceMap": "os/packages/underscore-string.js.map"
+    }
+  ]
+}
