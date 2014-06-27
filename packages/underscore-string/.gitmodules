@@ -1,3 +1,0 @@
-[submodule "lib/underscore.string"]
-	path = lib/underscore.string
-	url = git://github.com/epeli/underscore.string.git

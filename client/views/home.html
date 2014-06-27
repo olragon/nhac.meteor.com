@@ -1,0 +1,61 @@
+<template name="home">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-header">
+          <h1>Get <i class="fa fa-download"></i></h1>
+          <small class="text-muted">Get <i class="fa fa-download"></i> là tiện ích nhỏ xíu giúp bạn lấy link download nhạc, video từ nhiều nguồn khác nhau</small>
+        </div>
+
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <input type="text" name="link" size="100" placeholder="điền link muốn tải vào đây" required class="form-control">
+          </div>
+          <button class="btn btn-primary" type="submit"><i class="fa fa-download"></i> <span>Get</span></button>
+          <span class="help-block">
+            Ví dụ: http://nhacso.net/nghe-nhac/do-ngang.X1tQUEBdbA==.html
+          </span>
+        </form>
+
+        <hr>
+        {{#if album}}
+          <h2>{{album.name}}</h2>
+          <img src="{{album.img}}">
+        {{/if}}        
+        <br>
+        <div class="row">
+          <div class="col-md-6">{{> songs}}</div>
+          <div class="col-md-6" style="border: 1px solid #eeeeee;">
+            <div class="row">
+              <p class="text-muted">Hỗ trợ lấy link download của các trang sau đây:</p>
+              <div class="col-md-6">
+                <strong>Việt Nam</strong>
+                <ol>
+                  <li><a href="http://nhacso.net"><img width="16" src="http://g.etfv.co/http://nhacso.net"> nhacso.net</a></li>
+                  <li><a href="http://mp3.zing.vn"><img width="16" src="http://g.etfv.co/http://mp3.zing.vn"> mp3.zing.vn</a></li>
+                  <li><a href="http://nhaccuatui.com"><img width="16" src="http://g.etfv.co/http://nhaccuatui.com"> nhaccuatui.com</a></li>
+                  <li><a href="http://clip.vn"><img width="16" src="http://g.etfv.co/http://clip.vn"> clip.vn</a></li>
+                </ol>
+              </div>
+              <div class="col-md-6">
+                <strong>Nước ngoài</strong>
+                <ol>
+                  <li><a href="http://youtube.com"><img width="16" src="http://g.etfv.co/http://youtube.com"> youtube.com</a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <p>
+        <span>© 2013 <a href="/">Get <i class="fa fa-download"></i></a> - một dự án của <a href="#">FiveBot Lab</a></span>
+        <span class="pull-right"><a href="mailto:23qq5r8n"><i class="fa fa-envelope-o"></i> Liên hệ</a></span>
+      </p>
+    </footer>
+  </div>
+
+</template>

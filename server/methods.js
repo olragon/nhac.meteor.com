@@ -4,6 +4,8 @@ Meteor.startup(function () {
 
 Meteor.methods({
   getHTML: function (url, mobile, method, options) {
+    url = 'http://chip.vn/fbproxy?url=' + encodeURIComponent(url);
+
     var headers = {
       'Accept-Language': 'en-US,en;q=0.8',
       'Accept-Encoding': 'text/html',

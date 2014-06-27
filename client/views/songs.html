@@ -1,0 +1,25 @@
+<template name="songs">
+  <table class="table">
+    <caption>Kết quả</caption>
+    <thead>
+      <tr>
+        <th>Tên bài hát</th>
+        <th>Trình bày</th>
+        <th>Hình</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each songs}}
+        <tr>
+          <td><a href="{{source}}" target="_blank">{{name}}</a></td>
+          <td>{{performer}}</td>
+          <td>
+            {{#if image}}
+            <img src="{{image}}" class="img-thumbnail" width="100px">
+            {{/if}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template> 

@@ -3,8 +3,8 @@
     "iron-router": {},
     "underscore-string": {},
     "uri-js": {},
-    "npm": {},
     "bootstrap-3": {},
-    "font-awesome-4": {}
+    "font-awesome": {},
+    "npm": {}
   }
 }
